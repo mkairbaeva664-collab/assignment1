@@ -8,7 +8,7 @@ public class Task3 {
     }
 
     public static String Prime(int n, int d) {
-        if (n <= 1) return "Composite";
+        if (n == 1) return "Composite";
         if (d >= n) return "Prime";
         if (n % d == 0) return "Composite";
         return Prime(n, d + 1);
